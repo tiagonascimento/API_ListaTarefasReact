@@ -1,0 +1,51 @@
+# 📝 Task Manager Frontend
+
+Este é um projeto de frontend para gerenciamento de tarefas, desenvolvido em **React** com **Ant Design**. Ele se conecta a uma API REST para autenticação e manipulação de tarefas.
+
+## 🚀 Funcionalidades
+
+- Login com autenticação via token
+- Listagem de tarefas com título, descrição, data de criação e status
+- Criação de novas tarefas
+- Atualização de status de tarefas
+- Exclusão de tarefas
+- Interface responsiva com Ant Design
+
+## 🖼️ Tela principal
+
+A tela principal exibe uma tabela com as tarefas cadastradas, permitindo criar novas tarefas, editar o status e excluir tarefas existentes.
+
+## 📦 Tecnologias utilizadas
+
+- [React](https://reactjs.org/)
+- [Ant Design](https://ant.design/)
+- [Axios](https://axios-http.com/)
+- [React Router DOM](https://reactrouter.com/)
+
+## 🔐 Autenticação
+
+O login é feito com um usuário fixo e retorna um token JWT, que é armazenado no `localStorage` e utilizado nas requisições autenticadas.
+
+ ## ⚙️ Fluxo de funcionamento
+- Listagem de tarefas: Ao acessar a aplicação, o sistema faz uma requisição à API para buscar todas as tarefas cadastradas. Elas são exibidas em uma tabela com título, descrição, data de criação e status.
+- Criação de tarefa: O botão "Nova Tarefa" abre um modal com um formulário. Ao preencher título e descrição, a tarefa é enviada à API via POST e adicionada à lista.
+- Edição de tarefa: Ao clicar em "Editar", a aplicação envia uma requisição PUT para a API com o ID da tarefa. A API atualiza o status automaticamente — não é necessário preencher campos no frontend.
+- Exclusão de tarefa: Ao clicar em "Excluir", a tarefa é removida diretamente via DELETE na API. A lista é atualizada em seguida.
+
+## ⚙️ Como rodar o projeto
+
+1. Clone o repositório
+
+## ⚙️ Como executar com Docker Compose
+entre na raiz via linha de comando (CMD), onde o arquivo docker-compose  se encontra
+execute
+docker-compose up --build -d
+
+## Enderecos para a aplicação 
+
+API:
+http://localhost/swagger/index.html
+
+FrontEnd:
+http://localhost
+
